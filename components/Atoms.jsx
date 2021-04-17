@@ -9,3 +9,7 @@ export const Button = (props) => {
   );
 };
 
+export const Input = (props) => {
+  return <input {...props} className='focus:outline-none bg-gray-800 text-base md:text-xl px-2 md:px-5 py-3 flex-1' />;
+};
+

@@ -14,5 +14,5 @@ export const Input = (props) => {
 };
 
 export const ErrorMessage = ({ text }) => {
-  return <span className='text-red-500 self-start font-thin pl-2 md:pl-5'>{text}</span>;
+  return <span className='text-red-400 self-start font-thin pl-2 md:pl-5'>{text}</span>;
 };

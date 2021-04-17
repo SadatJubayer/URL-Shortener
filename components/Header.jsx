@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 const Header = () => {
   const router = useRouter();
   return (
-    <header className='py-5'>
+    <header className='py-5 border-b border-gray-600'>
       <nav className='flex items-center'>
         <img
           onClick={() => router.push('/')}
@@ -13,9 +13,9 @@ const Header = () => {
           alt=''
         />
         <div>
-          <h1 className='text-xl md:text-3xl font-bold'>GET in SHORT</h1>
+          <h1 className='text-xl md:text-3xl font-bold'>Picchi URL</h1>
           <p className='mt-1 text-base md:text-lg font-thin'>
-            Simplify your links & track them <span className='border-b-2 border-primary'>easily</span>
+            Short your links & track them <span className='border-b-2 border-primary'>easily</span>
           </p>
         </div>
       </nav>

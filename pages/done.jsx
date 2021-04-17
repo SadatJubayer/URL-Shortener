@@ -45,12 +45,12 @@ const DonePage = () => {
           />
         </svg>
         <Link href={`/${mainUrl}`}>
-          <a className='text-gray-300 underline' target='_blank' rel='noopener noreferrer'>
+          <a className='text-gray-300 underline truncate max-w-md' target='_blank' rel='noopener noreferrer'>
             {mainUrl}
           </a>
         </Link>
         <p className='text-gray-300'>is now</p>
-        <div className='border-gray-100 border'>
+        <div className='border-gray-100 border bg-gray-600'>
           <Link href={processUrl}>
             <a
               className='text-gray-100 bg-gray-600 text-base md:text-xl px-2 py-1'

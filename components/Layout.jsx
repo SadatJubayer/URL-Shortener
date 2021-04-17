@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import Footer from './Footer';
 
 const Layout = ({ children }) => {
   const router = useRouter();
@@ -34,6 +35,7 @@ const Layout = ({ children }) => {
       <div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-10'>
         <Header />
         <main>{children}</main>
+        <Footer />
       </div>
     </div>
   );

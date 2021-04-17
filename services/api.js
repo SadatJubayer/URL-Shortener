@@ -4,8 +4,7 @@ const callApi = async (method, path, data) => {
   const headers = {
     'Content-Type': 'application/json',
   };
-  const baseUrl = 'https://reinforcedit.com';
-  const url = `${baseUrl}${path}`;
+  const url = `${process.env.NEXT_PUBLIC_SERVER_URL}${path}`;
 
   return axios[method](url, data, { headers });
 };

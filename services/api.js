@@ -11,3 +11,4 @@ const callApi = async (method, path, data) => {
 
 export const shortUrl = (data) => callApi('post', '/url', data);
 export const breakUrl = (data) => callApi('get', `/url/${data}`, null);
+export const getStats = (data) => callApi('get', `/url/${data}/stats`, null);

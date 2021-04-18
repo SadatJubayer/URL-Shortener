@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import { useURL } from '../services/context';
 import Link from 'next/link';
 import { useClipboard } from 'use-clipboard-copy';
-import { CopyButton, ErrorMessage } from '../components/Atoms';
+import { CopyButton } from '../components/Atoms';
 import ErrorPage from '../components/ErrorPage';
 
 const DonePage = () => {

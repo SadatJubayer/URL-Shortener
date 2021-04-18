@@ -36,3 +36,4 @@ MIT
 - [x] Handle Errors
 - [x] Custom URL
 - [x] Statistics
+- [x] Statistics

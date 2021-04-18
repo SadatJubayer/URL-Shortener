@@ -35,4 +35,4 @@ MIT
 - [x] Redirect URL
 - [x] Handle Errors
 - [x] Custom URL
-- [ ] Statistics
+- [x] Statistics

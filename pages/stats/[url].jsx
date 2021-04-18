@@ -20,13 +20,13 @@ const StatPage = ({ stats, url }) => {
     );
   }
 
-  const clientURL = `${process.env.NEXT_PUBLIC_CLIENT_URL}${url}`;
+  const clientURL = `${process.env.NEXT_PUBLIC_CLIENT_URL}/${url}`;
 
   return (
     <Layout>
       <div className='flex flex-col mt-10'>
         <h2 className='text-xl font-medium text-gray-300'>
-          &rarr; &nbsp; Status of the URL{' '}
+          &rarr; &nbsp; Status of the URL -{' '}
           <Link href={clientURL}>
             <a target='_blank' className='underline text-blue-400' rel='noopener noreferrer'>
               {clientURL}

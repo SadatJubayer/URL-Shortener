@@ -50,7 +50,10 @@ const IndexPage = () => {
         });
       }
     } catch (error) {
-      console.log({ error });
+      console.log(error.response);
+      if (error?.response?.data?.error) {
+        return setError(error.response.data.error);
+      }
       setError('Something went wrong...');
     } finally {
       setLoading(false);

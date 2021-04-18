@@ -16,6 +16,7 @@ const DonePage = () => {
   });
 
   const processUrl = `${process.env.NEXT_PUBLIC_CLIENT_URL}/${shortenedUrl}`;
+  const statUrl = `${process.env.NEXT_PUBLIC_CLIENT_URL}/stats/${shortenedUrl}`;
 
   const copyToClipBoard = () => {
     clipboard.copy(processUrl);
@@ -45,7 +46,11 @@ const DonePage = () => {
           />
         </svg>
         <Link href={`/${mainUrl}`}>
-          <a className='text-gray-300 underline truncate max-w-md' target='_blank' rel='noopener noreferrer'>
+          <a
+            className='text-gray-300 underline max-w-full text-center overflow-hidden'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             {mainUrl}
           </a>
         </Link>
@@ -61,6 +66,14 @@ const DonePage = () => {
             </a>
           </Link>
           <CopyButton onClick={copyToClipBoard}>{clipboard.copied ? 'Copied' : 'Copy'}</CopyButton>
+        </div>
+        <div className='pt-4 flex flex-col items-center space-x-1'>
+          <p>Statistics of the URL: </p>
+          <Link href={statUrl}>
+            <a target='_blank' rel='noopener noreferrer' className='inline-block hover:underline text-blue-300'>
+              {statUrl}
+            </a>
+          </Link>
         </div>
         <Link href='/'>
           <a className='inline-block pt-5 hover:underline'>Create another</a>

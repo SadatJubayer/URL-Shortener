@@ -27,3 +27,12 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 ## License
 
 MIT
+
+## Todo
+
+- [x] Frontend design
+- [x] Short URL
+- [x] Redirect URL
+- [x] Handle Errors
+- [x] Custom URL
+- [ ] Statistics

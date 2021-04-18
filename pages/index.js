@@ -28,6 +28,7 @@ const IndexPage = () => {
     e.preventDefault();
     setError('');
     setLoading(true);
+    setShowCustom(false);
 
     // Validate URL
     if (!mainUrl || !isValidUrl(mainUrl)) {
@@ -52,6 +53,7 @@ const IndexPage = () => {
     } catch (error) {
       console.log(error.response);
       if (error?.response?.data?.error) {
+        setShowCustom(true);
         return setError(error.response.data.error);
       }
       setError('Something went wrong...');
